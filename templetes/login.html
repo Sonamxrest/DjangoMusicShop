@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+   <title>Home Page</title>
+      <meta charset= "UTF-8">
+         <meta name ="viewport" content = "width=device-width,initial-scale=1.0">
+
+               <link rel = "Stylesheet" type="text/css"  href="file/style.css" />
+
+             <link rel = "Stylesheet" type="text/css" href = " css/bootstrap.min.css">
+<link rel="Stylesheet" href=" css/fontawesome.css" type="text/css">
+     <link rel="Stylesheet" href=" css/fontawesome.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="file/java.js" type="text/javascript">
+
+        </script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+
+<body>
+
+
+
+
+
+  <div class="container-fluid " style="height:40px;">
+  <div class ="row"style="background-color:#292b2c;">
+	 <div id ="logo" class="col-lg-2 ">
+	   <a href="http://127.0.0.1:8000/music/home"><img src= "  logo.png " /></a>
+	  </div>
+
+	<div class="col-lg-6 ">
+
+	 </div>
+
+	<div  id ="s4"class = "col-lg-4 " >
+          <form class="form-inline" method =POST>
+       
+    <input class="form-control mr-sm-4" name="key"  type="search" placeholder="Search"  aria-label="Search">
+    <a href="#" class="btn btn-outline-primary my-2 my-sm-0" type="submit" style="">Search</a>
+  </form>
+              </div>
+
+	</div>
+	
+</div>
+
+	
+<div class="container-fluid" style="margin-top:300px;">
+<div class="row">
+<div class="col-lg-6">
+<form class="box" method="POST" action ="index.html"  >
+<h1>LogIn </h1>
+ 
+       
+  
+    <input type="text" name="un"placeholder="username"  id="email">
+  
+  
+   
+    <input type="password" name="pw" placeholder="password" id="pass">
+ 
+
+ 
+  <input type="submit" name="log" class="btn btn-danger">
+  </br>
+    <a href="../Form">Dont have account Signup</a>
+
+</form>
+</div>
+
+    
+
+
+
+<div class="col-lg-6"style="margin-top:30px;">
+    <div class="center">
+      <div class="front-face">
+        <div class="contents front">
+		<img src ="" style="width:100;">
+          <p>David Smith</p>
+          <span>Kathmandu, Nepal</span>
+
+        </div>
+      </div>
+      <div class="back-face">
+        <div class="contents back">
+         
+          <span>Follow Me</span>
+        
+ <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+              </ul>       
+			  <a href="#" class="btn btn-primary" type="submit">Buy Product</a>
+			  </div>
+      </div>
+    </div>
+	
+	
+	</div>
+	
+	
+	
+</div>
+</div> 
+
+
+
+</body>
+<script type="text/javascript">
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener("click", () => 
+  navLinks.classList.toggle("open");
+  links.forEach(link => 
+    link.classList.toggle("fade");
+  );
+);
+
+
+</script>
+
+
+
+
+
+</html>

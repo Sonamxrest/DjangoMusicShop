@@ -1,0 +1,672 @@
+
+
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+ <head>
+   <title>Home Page</title>
+      <meta charset= "UTF-8">
+         <meta name ="viewport" content = "width=device-width,initial-scale=1.0">
+
+               <link rel = "Stylesheet" type="text/css"  href="{%static 'file/style.css'%}" />
+
+             <link rel = "Stylesheet" type="text/css" href = "  {% static 'css/bootstrap.min.css' %}">
+<link rel="Stylesheet" href="{% static 'css/fontawesome.css'%}" type="text/css">
+     <link rel="Stylesheet" href="{% static 'css/fontawesome.css'%}" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <script src="{% static 'file/java.js'%}" type="text/javascript">
+
+        </script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+
+
+
+ <div class="container-fluid bg-dark" style="height:60px;">
+  <div class ="row">
+
+
+	 <div id ="logo" class="col-lg-2 ">
+	   <a href="http://127.0.0.1:8000/music/show#cslide"><img src= "{% static 'logo.png' %}" /></a>
+	  </div>
+
+	<div class="col-lg-8 ">
+<a href="#" >Email:music@gmail.com</a>
+	 </div>
+
+	<div id = "b" class = "col-lg-2 " >
+          <div id="icon">
+             <a href ="http//www.instagram.com" ><img src =  "{% static 'in.png' %}" alt="instagram"/></a>
+               <a href ="#"><img src ="{% static 'tw.png' %}" alt="twitter"/></a>
+
+                 <a href = "#"><img src =  "{% static 'wh.png' %}" alt="Watsapp"/></a>
+              </div>
+              </div>
+
+	</div>
+	</div>
+
+<div class="container-fluid ">
+  <div class ="row bg-dark">
+
+
+   <div  class="col-lg-6">
+
+	<form class="form-inline">
+    <input class="form-control mr-sm-4" type="search" placeholder="Search" style="width:400px margin-top:100px;" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+   </div>
+
+
+
+   <div id ="nav" class="col-lg-6 ">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+  <!-- Navbar brand -->
+
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#reNav"
+    aria-controls="reNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="reNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/Form">Signup
+
+        </a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Category</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Drum</a>
+          <a class="dropdown-item" href="#">Guitar</a>
+          <a class="dropdown-item" href="#">Cajon</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/Product">Product</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/music/About">About</a>
+      </li>
+         <li  class="nav-item dropdown">
+                     <a  class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src =  "{% static 'sign.png' %}" alt="instagram"/></a>
+                    <div class="dropdown-menu">
+                   <a class="dropdown-item" href=" http://127.0.0.1:8000/music/show#cslide">Home</a>
+                     <a class="dropdown-item" href="http://127.0.0.1:8000/guitar">Help</a>
+                     <a class="dropdown-item" href="http://127.0.0.1:8000/logout">Logout</a>
+                    </div>
+                 </li>
+
+      <!-- Dropdown -->
+
+
+    </ul>
+
+  </div>
+
+
+</nav>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+ <div class="container-fluid">
+     <div class="row">
+
+
+
+         <div class ="col-lg-4 bg-light">
+ <a href="#"> <img src="{% static 'voilen.jpg'%}" alt="IMG" > </a>
+
+
+                     <h4 class="m-text4 t-center w-size3 p-b-8">
+                         Sign up & get 20% off
+                         <a href="#" style="margin-left:70px;"><img src="{% static 'shop.png'%}"></a>
+                         <button id="shop" class="btn btn-danger" style="height:30px;width:80px;">Shop </button>
+                     </h4>
+
+                     <p class="t-center w-size4">
+                         Be the frist to know about the latest fashion news and get exclu-sive offers
+                     </p>
+
+
+                     <!-- Button -->
+                     <button class="btn btn-danger" style="height:30px; width:80px; margin-left:80px;">SignUp </button>
+
+
+         </div>
+         <div class ="col-lg-3 bg-dark">
+
+             <div id="carousel2 " class="carousel slide" data-ride="carousel">
+                 <div class="carousel-inner">
+                     <div class="carousel-item active" data-interval="1000">
+                         <img src="{% static 'g1.jpg'%}" class="d-block w-100" alt="">
+                     </div>
+                     <div class="carousel-item" data-interval="1000">
+                         <img src="{% static 'g2.jpg'%}"class="d-block w-100" alt="...">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="{% static 'g3.jpg'%}" class="d-block w-100" alt="...">
+                     </div>
+
+                     <a href="#cslide" data-slide="prev" class="carousel-control-prev sv">
+                         <span class="carousel-control-prev-icon"></span>
+                     </a>
+                     <a href="#cslide" data-slide="next" class="carousel-control-next sv">
+                         <span class="carousel-control-next-icon"></span>
+                     </a>
+
+
+                 </div>
+                 <div class ="col-lg-5 bg-light">
+
+                 </div>
+
+
+
+
+
+             </div>
+
+         </div>
+
+
+
+
+         <div class="container-fluid">
+             <div class="row">
+
+                 <div class ="col-lg-4 bg-light">
+
+                 </div>
+                 <div class ="col-lg-3 bg-dark">
+
+                     <p class = "text-center " >
+<span > Our page helps to onncet with the costumers. more games are available at our officical online page.
+ Our page helps to conncet with the costumers.
+ more games are available at our officical online page.
+ Our page helps to conncet with the costumers. more games
+ are available at our officical online page</span></p>
+
+                     <a href="#" style="margin-left:70px;"><img src="{% static 'cart.png'%}"></a>
+                     <button  class="btn btn-danger" style="height:30px;width:80px;">Shop </button>
+                 </div>
+                 <div class ="col-lg-5 bg-light">
+
+                 </div>
+
+
+             </div>
+
+         </div>
+
+
+
+
+
+
+
+
+  <div class="container-fluid">
+
+
+        <div class="container">
+<h4>Product You may Like</h4>
+            <div class="carousel-work">
+                <div class="carousel slide" data-ride="carousel" id="multi">
+                    <ul class="carousel-indicators">
+                        <li class="active" data-target="#cslide" data-slide-to="0"></li>
+                        <li data-target="#multi" data-slide-to="1"></li>
+                        <li data-target="#multi" data-slide-to="2"></li>
+                        <li data-target="#multi" data-slide-to="3"></li>
+						<li data-target="#multi" data-slide-to="4"></li>
+
+
+                    </ul>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'd.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+         <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'd2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'eg.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'eg2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+       <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                            </div>
+                        </div>
+
+
+
+       <div class="carousel-item ">
+                            <div class="row">
+
+                                <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'd.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+         <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'd2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'eg.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'eg2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+       <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                         <div class="carousel-item ">
+                            <div class="row">
+
+                                <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'd.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+         <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'd2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'eg.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'eg2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+       <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                            </div>
+                        </div>
+
+
+
+                         <div class="carousel-item ">
+                            <div class="row">
+
+                                <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'd.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+         <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'd2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top " src=" {% static 'eg.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+          <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+                                                         <div class=" col-md-3">
+   <div class="card mb-2">
+    <img class="card-img-top" src=" {% static 'eg2.jpg'%}"
+           alt="Card image cap">
+          <div class="card-body">
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+       <a class="btn btn-primary btn-md btn-rounded" id="buynow">Buy Now</a>
+         </div>
+        </div>
+ </div>
+
+
+                            </div>
+                        </div>
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <a href="#cslide" data-slide="prev" class="carousel-control-prev sv btn-floating">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#cslide" data-slide="next" class="carousel-control-next sv btn-floating">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+</div>
+  </div>
+
+
+
+
+
+         <div class="container bg-light">
+
+             <div class="row">
+
+                 <div class="col-lg-3 bg-light " style="border:solid;">
+
+
+                     <form action="">
+                         <legend>LoginIn </legend>
+                         <div class="form-group">
+                             <label for="email">Email:</label>
+                             <input type="email" class="form-control" id="email">
+                         </div>
+                         <div class="form-group">
+                             <label for="pass">Password:</label>
+                             <input type="password" class="form-control" id="pass">
+                         </div>
+                         <div class="checkbox">
+                             <label><input type="checkbox"> Remember me</label>
+                         </div>
+                         <button type="submit" class="btn btn-danger">Submit</button>
+                     </form>
+                 </div>
+
+                 <div class="col-lg-2 bg-ligt" id="nav2">
+
+
+
+
+                     <nav   class="navbar navbar-light">
+                         <ul class="navbar-nav">
+                             <li class="nav-item active">
+                                 <a href="form.html"  > Signup </a>
+                             </li>
+
+
+                             <li class="nav-item active"><a href="#"  class="nav-link"> About </a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link">The hub</a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link"> Live music </a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link"> Help </a> </li>
+                         </ul>
+
+                     </nav>
+
+                 </div>
+                 <div class="col-lg-2 bg-ligt" id="nav2">
+
+
+
+
+                     <nav   class="navbar navbar-light">
+                         <ul class="navbar-nav">
+                             <li class="nav-item active">
+                                 <a href="form.html"  > Signup </a>
+                             </li>
+
+
+                             <li class="nav-item active"><a href="#"  class="nav-link"> About </a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link">The hub</a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link"> Live music </a> </li>
+                             <li class="nav-item active"><a href="#"  class="nav-link"> Help </a> </li>
+                         </ul>
+
+                     </nav>
+
+                 </div>
+
+
+
+                 <div class="col-lg-3 bg-ligt">
+                     <video width="320" height="240">
+                         <source src="haha.mp4" type="video/mp4">
+                         <source src="movie.ogg" type="video/ogg">
+
+                     </video>
+                 </div>
+
+
+
+
+
+
+
+
+
+
+
+             </div>
+         </div>
+
+
+
+
+</div>
+ </div>
+
+
+
+
+<div class="col-lg-8">
+    <fieldset style="color:red;">Your Bookings</fieldset>
+    <table class="table table-bordered table-striped">
+<thead>
+
+<th class="alert-danger">Username</th>
+<th  class="alert-danger">Model</th>
+<th  class="alert-danger">Price</th>
+<th  class="alert-danger"> Bookings</th>
+<th  class="alert-danger"> Cancel</th>
+
+</thead>
+
+
+        <tbody>
+   {% for p in books %}
+<tr>
+    {% if p.user.id == current_user %}
+
+    <td>  {{p.user.username}} </td>
+    <td>{{p.product.model}}</td>
+    <td>${{p.product.prices}}</td>
+    <td>{{p.date}}</td>
+    <td> <a href ="../{{p.id}}" class="btn btn-primary">del</a> </td>
+    {% endif %}
+
+</tr>
+   {% endfor %}
+</tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
